@@ -6,6 +6,11 @@
 
 name: supabase
 
+networks:
+  default:
+    external: true
+    name: instap-network
+
 services:
   studio:
     container_name: supabase-studio
